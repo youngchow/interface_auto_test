@@ -1,0 +1,538 @@
+2019-07-22 23:35:07,201 - [DEBUG] - [msg]开始执行投资接口用例。。。。- test_05_invest.py - 22
+2019-07-22 23:35:07,211 - [DEBUG] - [msg]获取到的data数据为：{"mobilephone":"18857429301","pwd":"123456"}，在第【2】- test_05_invest.py - 35
+2019-07-22 23:35:07,424 - [DEBUG] - [msg]测试管理员正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 77
+2019-07-22 23:35:07,426 - [DEBUG] - [msg]获取到的data数据为：{"memberId":"104171","title":"测试-jason","amount":20000,"loanRate":12.0,"loanTerm":6,"loanDateType":0,"repaymemtWay":11,"biddingDays":5}，在第【3】- test_05_invest.py - 35
+2019-07-22 23:35:07,707 - [DEBUG] - [msg]测试管理员加标,用例执行成功,执行结果为:pass- test_05_invest.py - 77
+2019-07-22 23:35:07,713 - [DEBUG] - [msg]测试用例执行完毕，投资接口用例停止执行。。。。- test_05_invest.py - 27
+2019-07-22 23:40:41,377 - [DEBUG] - [msg]开始执行投资接口用例。。。。- test_05_invest.py - 22
+2019-07-22 23:40:41,389 - [DEBUG] - [msg]获取到的data数据为：{"mobilephone":"18857429301","pwd":"123456"}，在第【2】- test_05_invest.py - 35
+2019-07-22 23:40:41,596 - [DEBUG] - [msg]测试管理员正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 67
+2019-07-22 23:40:41,597 - [DEBUG] - [msg]获取到的data数据为：{"memberId":"104171","title":"测试-jason","amount":20000,"loanRate":12.0,"loanTerm":6,"loanDateType":0,"repaymemtWay":11,"biddingDays":5}，在第【3】- test_05_invest.py - 35
+2019-07-22 23:40:41,883 - [DEBUG] - [msg]测试管理员加标,用例执行成功,执行结果为:pass- test_05_invest.py - 67
+2019-07-22 23:40:41,897 - [DEBUG] - [msg]测试用例执行完毕，投资接口用例停止执行。。。。- test_05_invest.py - 27
+2019-07-22 23:44:39,798 - [DEBUG] - [msg]开始执行投资接口用例。。。。- test_05_invest.py - 22
+2019-07-22 23:44:39,804 - [DEBUG] - [msg]获取到的data数据为：{"mobilephone":"18857429301","pwd":"123456"}，在第【2】- test_05_invest.py - 35
+2019-07-22 23:44:40,027 - [DEBUG] - [msg]测试管理员正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 68
+2019-07-22 23:44:40,028 - [DEBUG] - [msg]获取到的data数据为：{"memberId":"104171","title":"测试-jason","amount":20000,"loanRate":12.0,"loanTerm":6,"loanDateType":0,"repaymemtWay":11,"biddingDays":5}，在第【3】- test_05_invest.py - 35
+2019-07-22 23:44:40,229 - [DEBUG] - [msg]测试用例执行完毕，投资接口用例停止执行。。。。- test_05_invest.py - 27
+2019-07-22 23:46:46,017 - [DEBUG] - [msg]开始执行投资接口用例。。。。- test_05_invest.py - 22
+2019-07-22 23:46:46,023 - [DEBUG] - [msg]获取到的data数据为：{"mobilephone":"18857429301","pwd":"123456"}，在第【2】- test_05_invest.py - 35
+2019-07-22 23:46:46,239 - [DEBUG] - [msg]测试管理员正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 68
+2019-07-22 23:46:46,240 - [DEBUG] - [msg]获取到的data数据为：{"memberId":"104171","title":"测试-jason","amount":20000,"loanRate":12.0,"loanTerm":6,"loanDateType":0,"repaymemtWay":11,"biddingDays":5}，在第【3】- test_05_invest.py - 35
+2019-07-22 23:46:46,445 - [DEBUG] - [msg]测试用例执行完毕，投资接口用例停止执行。。。。- test_05_invest.py - 27
+2019-07-22 23:47:37,595 - [DEBUG] - [msg]开始执行投资接口用例。。。。- test_05_invest.py - 22
+2019-07-22 23:47:37,602 - [DEBUG] - [msg]获取到的data数据为：{"mobilephone":"18857429301","pwd":"123456"}，在第【2】- test_05_invest.py - 35
+2019-07-22 23:47:37,817 - [DEBUG] - [msg]测试管理员正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 68
+2019-07-22 23:47:37,819 - [DEBUG] - [msg]获取到的data数据为：{"memberId":"104171","title":"测试-jason","amount":20000,"loanRate":12.0,"loanTerm":6,"loanDateType":0,"repaymemtWay":11,"biddingDays":5}，在第【3】- test_05_invest.py - 35
+2019-07-22 23:47:38,028 - [DEBUG] - [msg]测试用例执行完毕，投资接口用例停止执行。。。。- test_05_invest.py - 27
+2019-07-22 23:49:09,388 - [DEBUG] - [msg]开始执行投资接口用例。。。。- test_05_invest.py - 22
+2019-07-22 23:49:09,394 - [DEBUG] - [msg]获取到的data数据为：{"mobilephone":"18857429301","pwd":"123456"}，在第【2】- test_05_invest.py - 35
+2019-07-22 23:49:09,613 - [DEBUG] - [msg]测试管理员正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 68
+2019-07-22 23:49:09,615 - [DEBUG] - [msg]获取到的data数据为：{"memberId":"104171","title":"测试-jason","amount":20000,"loanRate":12.0,"loanTerm":6,"loanDateType":0,"repaymemtWay":11,"biddingDays":5}，在第【3】- test_05_invest.py - 35
+2019-07-22 23:49:09,794 - [DEBUG] - [msg]load_id的值为【48517】,在第  3  行,返回值类型 <class 'int'>- test_05_invest.py - 52
+2019-07-22 23:49:09,892 - [DEBUG] - [msg]测试管理员加标,用例执行成功,执行结果为:pass- test_05_invest.py - 68
+2019-07-22 23:49:09,910 - [DEBUG] - [msg]测试用例执行完毕，投资接口用例停止执行。。。。- test_05_invest.py - 27
+2019-07-22 23:51:49,031 - [DEBUG] - [msg]开始执行投资接口用例。。。。- test_05_invest.py - 22
+2019-07-22 23:51:49,038 - [DEBUG] - [msg]获取到的data数据为：{"mobilephone":"18857429301","pwd":"123456"}，在第【2】- test_05_invest.py - 35
+2019-07-22 23:51:49,258 - [DEBUG] - [msg]测试管理员正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 68
+2019-07-22 23:51:49,259 - [DEBUG] - [msg]获取到的data数据为：{"memberId":"104171","title":"测试-jason","amount":20000,"loanRate":12.0,"loanTerm":6,"loanDateType":0,"repaymemtWay":11,"biddingDays":5}，在第【3】- test_05_invest.py - 35
+2019-07-22 23:51:49,441 - [DEBUG] - [msg]load_id的值为【48519】,在第  3  行,返回值类型 <class 'int'>- test_05_invest.py - 52
+2019-07-22 23:51:49,532 - [DEBUG] - [msg]测试管理员加标,用例执行成功,执行结果为:pass- test_05_invest.py - 68
+2019-07-22 23:51:49,557 - [DEBUG] - [msg]测试用例执行完毕，投资接口用例停止执行。。。。- test_05_invest.py - 27
+2019-07-22 23:52:55,754 - [DEBUG] - [msg]开始执行投资接口用例。。。。- test_05_invest.py - 22
+2019-07-22 23:52:55,759 - [DEBUG] - [msg]获取到的data数据为：{"mobilephone":"18857429301","pwd":"123456"}，在第【2】- test_05_invest.py - 35
+2019-07-22 23:52:55,978 - [DEBUG] - [msg]测试管理员正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 68
+2019-07-22 23:52:55,980 - [DEBUG] - [msg]获取到的data数据为：{"memberId":"104171","title":"测试-jason","amount":20000,"loanRate":12.0,"loanTerm":6,"loanDateType":0,"repaymemtWay":11,"biddingDays":5}，在第【3】- test_05_invest.py - 35
+2019-07-22 23:52:56,157 - [DEBUG] - [msg]load_id的值为【48520】,在第  3  行,返回值类型 <class 'int'>- test_05_invest.py - 52
+2019-07-22 23:52:56,254 - [DEBUG] - [msg]测试管理员加标,用例执行成功,执行结果为:pass- test_05_invest.py - 68
+2019-07-22 23:52:56,265 - [DEBUG] - [msg]测试用例执行完毕，投资接口用例停止执行。。。。- test_05_invest.py - 27
+2019-07-22 23:55:22,201 - [DEBUG] - [msg]开始执行投资接口用例。。。。- test_05_invest.py - 22
+2019-07-22 23:55:22,206 - [DEBUG] - [msg]获取到的data数据为：{"mobilephone":"18857429301","pwd":"123456"}，在第【2】- test_05_invest.py - 35
+2019-07-22 23:55:22,415 - [DEBUG] - [msg]测试管理员正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 68
+2019-07-22 23:55:22,417 - [DEBUG] - [msg]获取到的data数据为：{"memberId":"104171","title":"测试-jason","amount":20000,"loanRate":12.0,"loanTerm":6,"loanDateType":0,"repaymemtWay":11,"biddingDays":5}，在第【3】- test_05_invest.py - 35
+2019-07-22 23:55:22,608 - [DEBUG] - [msg]load_id的值为【48522】,在第  3  行,返回值类型 <class 'int'>- test_05_invest.py - 52
+2019-07-22 23:55:22,702 - [DEBUG] - [msg]测试管理员加标,用例执行成功,执行结果为:pass- test_05_invest.py - 68
+2019-07-22 23:55:22,720 - [DEBUG] - [msg]测试用例执行完毕，投资接口用例停止执行。。。。- test_05_invest.py - 27
+2019-07-22 23:59:42,982 - [DEBUG] - [msg]开始执行投资接口用例。。。。- test_05_invest.py - 22
+2019-07-22 23:59:42,990 - [DEBUG] - [msg]获取到的data数据为：{"mobilephone":"18857429301","pwd":"123456"}，在第【2】- test_05_invest.py - 35
+2019-07-22 23:59:43,207 - [DEBUG] - [msg]测试管理员正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 68
+2019-07-22 23:59:43,212 - [DEBUG] - [msg]获取到的data数据为：{"memberId":"104171","title":"测试-jason","amount":20000,"loanRate":12.0,"loanTerm":6,"loanDateType":0,"repaymemtWay":11,"biddingDays":5}，在第【3】- test_05_invest.py - 35
+2019-07-22 23:59:43,410 - [DEBUG] - [msg]load_id的值为【48526】,在第  3  行,返回值类型 <class 'int'>- test_05_invest.py - 52
+2019-07-22 23:59:43,509 - [DEBUG] - [msg]测试管理员加标,用例执行成功,执行结果为:pass- test_05_invest.py - 68
+2019-07-22 23:59:43,511 - [DEBUG] - [msg]获取到的data数据为：{"id":"48526","status":4}，在第【4】- test_05_invest.py - 35
+2019-07-22 23:59:43,667 - [DEBUG] - [msg]测试管理员审核,用例执行成功,执行结果为:pass- test_05_invest.py - 68
+2019-07-22 23:59:43,673 - [DEBUG] - [msg]测试用例执行完毕，投资接口用例停止执行。。。。- test_05_invest.py - 27
+2019-07-23 00:00:03,497 - [DEBUG] - [msg]开始执行投资接口用例。。。。- test_05_invest.py - 22
+2019-07-23 00:00:03,506 - [DEBUG] - [msg]获取到的data数据为：{"mobilephone":"18857429301","pwd":"123456"}，在第【2】- test_05_invest.py - 35
+2019-07-23 00:00:03,719 - [DEBUG] - [msg]测试管理员正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 68
+2019-07-23 00:00:03,721 - [DEBUG] - [msg]获取到的data数据为：{"memberId":"104171","title":"测试-jason","amount":20000,"loanRate":12.0,"loanTerm":6,"loanDateType":0,"repaymemtWay":11,"biddingDays":5}，在第【3】- test_05_invest.py - 35
+2019-07-23 00:00:03,923 - [DEBUG] - [msg]load_id的值为【48527】,在第  3  行,返回值类型 <class 'int'>- test_05_invest.py - 52
+2019-07-23 00:00:04,017 - [DEBUG] - [msg]测试管理员加标,用例执行成功,执行结果为:pass- test_05_invest.py - 68
+2019-07-23 00:00:04,021 - [DEBUG] - [msg]获取到的data数据为：{"id":"48527","status":4}，在第【4】- test_05_invest.py - 35
+2019-07-23 00:00:04,251 - [DEBUG] - [msg]测试管理员审核,用例执行成功,执行结果为:pass- test_05_invest.py - 68
+2019-07-23 00:00:04,256 - [DEBUG] - [msg]测试用例执行完毕，投资接口用例停止执行。。。。- test_05_invest.py - 27
+2019-07-23 00:23:52,079 - [DEBUG] - [msg]开始执行投资接口用例。。。。- test_05_invest.py - 22
+2019-07-23 00:23:52,086 - [DEBUG] - [msg]获取到的data数据为：{"mobilephone":"18857429301","pwd":"123456"}，在第【2】- test_05_invest.py - 35
+2019-07-23 00:23:52,305 - [DEBUG] - [msg]测试管理员正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 68
+2019-07-23 00:23:52,309 - [DEBUG] - [msg]获取到的data数据为：{"memberId":"104171","title":"测试-jason","amount":20000,"loanRate":12.0,"loanTerm":6,"loanDateType":0,"repaymemtWay":11,"biddingDays":5}，在第【3】- test_05_invest.py - 35
+2019-07-23 00:23:52,507 - [DEBUG] - [msg]load_id的值为【48542】,在第  3  行,返回值类型 <class 'int'>- test_05_invest.py - 52
+2019-07-23 00:23:52,616 - [DEBUG] - [msg]测试管理员加标,用例执行成功,执行结果为:pass- test_05_invest.py - 68
+2019-07-23 00:23:52,618 - [DEBUG] - [msg]获取到的data数据为：{"id":"48542","status":4}，在第【4】- test_05_invest.py - 35
+2019-07-23 00:23:52,799 - [DEBUG] - [msg]测试管理员审核,用例执行成功,执行结果为:pass- test_05_invest.py - 68
+2019-07-23 00:23:53,082 - [DEBUG] - [msg]测试用例执行完毕，投资接口用例停止执行。。。。- test_05_invest.py - 27
+2019-07-23 00:24:50,503 - [DEBUG] - [msg]开始执行投资接口用例。。。。- test_05_invest.py - 22
+2019-07-23 00:24:50,514 - [DEBUG] - [msg]获取到的data数据为：{"mobilephone":"18857429301","pwd":"123456"}，在第【2】- test_05_invest.py - 35
+2019-07-23 00:24:50,728 - [DEBUG] - [msg]测试管理员正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 68
+2019-07-23 00:24:50,730 - [DEBUG] - [msg]获取到的data数据为：{"memberId":"104171","title":"测试-jason","amount":20000,"loanRate":12.0,"loanTerm":6,"loanDateType":0,"repaymemtWay":11,"biddingDays":5}，在第【3】- test_05_invest.py - 35
+2019-07-23 00:24:50,920 - [DEBUG] - [msg]load_id的值为【48543】,在第  3  行,返回值类型 <class 'int'>- test_05_invest.py - 52
+2019-07-23 00:24:51,024 - [DEBUG] - [msg]测试管理员加标,用例执行成功,执行结果为:pass- test_05_invest.py - 68
+2019-07-23 00:24:51,028 - [DEBUG] - [msg]获取到的data数据为：{"id":"48543","status":4}，在第【4】- test_05_invest.py - 35
+2019-07-23 00:24:51,432 - [DEBUG] - [msg]测试管理员审核,用例执行成功,执行结果为:pass- test_05_invest.py - 68
+2019-07-23 00:24:51,678 - [DEBUG] - [msg]测试用例执行完毕，投资接口用例停止执行。。。。- test_05_invest.py - 27
+2019-07-23 00:27:19,375 - [DEBUG] - [msg]开始执行投资接口用例。。。。- test_05_invest.py - 22
+2019-07-23 00:27:19,380 - [DEBUG] - [msg]获取到的data数据为：{"mobilephone":"18857429301","pwd":"123456"}，在第【2】- test_05_invest.py - 35
+2019-07-23 00:27:19,590 - [DEBUG] - [msg]测试管理员正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 68
+2019-07-23 00:27:19,592 - [DEBUG] - [msg]获取到的data数据为：{"memberId":"104171","title":"测试-jason","amount":20000,"loanRate":12.0,"loanTerm":6,"loanDateType":0,"repaymemtWay":11,"biddingDays":5}，在第【3】- test_05_invest.py - 35
+2019-07-23 00:27:19,787 - [DEBUG] - [msg]load_id的值为【48545】,在第  3  行,返回值类型 <class 'int'>- test_05_invest.py - 52
+2019-07-23 00:27:19,888 - [DEBUG] - [msg]测试管理员加标,用例执行成功,执行结果为:pass- test_05_invest.py - 68
+2019-07-23 00:27:19,890 - [DEBUG] - [msg]获取到的data数据为：{"id":"48545","status":4}，在第【4】- test_05_invest.py - 35
+2019-07-23 00:27:20,055 - [DEBUG] - [msg]测试管理员审核,用例执行成功,执行结果为:pass- test_05_invest.py - 68
+2019-07-23 00:27:20,281 - [DEBUG] - [msg]测试用例执行完毕，投资接口用例停止执行。。。。- test_05_invest.py - 27
+2019-07-23 00:29:55,357 - [DEBUG] - [msg]开始执行投资接口用例。。。。- test_05_invest.py - 22
+2019-07-23 00:29:55,363 - [DEBUG] - [msg]获取到的data数据为：{"mobilephone":"18857429301","pwd":"123456"}，在第【2】- test_05_invest.py - 35
+2019-07-23 00:29:55,604 - [DEBUG] - [msg]测试管理员正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 68
+2019-07-23 00:29:55,608 - [DEBUG] - [msg]获取到的data数据为：{"memberId":"104171","title":"测试-jason","amount":20000,"loanRate":12.0,"loanTerm":6,"loanDateType":0,"repaymemtWay":11,"biddingDays":5}，在第【3】- test_05_invest.py - 35
+2019-07-23 00:29:55,811 - [DEBUG] - [msg]load_id的值为【48547】,在第  3  行,返回值类型 <class 'int'>- test_05_invest.py - 52
+2019-07-23 00:29:55,908 - [DEBUG] - [msg]测试管理员加标,用例执行成功,执行结果为:pass- test_05_invest.py - 68
+2019-07-23 00:29:55,911 - [DEBUG] - [msg]获取到的data数据为：{"id":"48547","status":4}，在第【4】- test_05_invest.py - 35
+2019-07-23 00:29:56,073 - [DEBUG] - [msg]测试管理员审核,用例执行成功,执行结果为:pass- test_05_invest.py - 68
+2019-07-23 00:29:56,287 - [DEBUG] - [msg]测试用例执行完毕，投资接口用例停止执行。。。。- test_05_invest.py - 27
+2019-07-23 00:35:14,121 - [DEBUG] - [msg]开始执行投资接口用例。。。。- test_05_invest.py - 22
+2019-07-23 00:35:14,129 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18857429301","pwd":"123456"}，在第【2】- test_05_invest.py - 35
+2019-07-23 00:35:14,371 - [DEBUG] - [msg]测试管理员正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 00:35:14,373 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104171","title":"测试-jason","amount":20000,"loanRate":12.0,"loanTerm":6,"loanDateType":0,"repaymemtWay":11,"biddingDays":5}，在第【3】- test_05_invest.py - 35
+2019-07-23 00:35:14,643 - [DEBUG] - [msg]load_id的值为【48549】,在第  3  行,返回值类型 <class 'int'>- test_05_invest.py - 52
+2019-07-23 00:35:14,746 - [DEBUG] - [msg]测试管理员加标,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 00:35:14,749 - [DEBUG] - [msg]获取到的new_data数据为：{"id":"48549","status":4}，在第【4】- test_05_invest.py - 35
+2019-07-23 00:35:14,917 - [DEBUG] - [msg]测试管理员审核,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 00:35:15,119 - [DEBUG] - [msg]测试用例执行完毕，投资接口用例停止执行。。。。- test_05_invest.py - 27
+2019-07-23 00:38:12,180 - [DEBUG] - [msg]开始执行投资接口用例。。。。- test_05_invest.py - 22
+2019-07-23 00:38:12,184 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18857429301","pwd":"123456"}，在第【2】- test_05_invest.py - 35
+2019-07-23 00:38:12,401 - [DEBUG] - [msg]测试管理员正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 00:38:12,404 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104171","title":"测试-jason","amount":20000,"loanRate":12.0,"loanTerm":6,"loanDateType":0,"repaymemtWay":11,"biddingDays":5}，在第【3】- test_05_invest.py - 35
+2019-07-23 00:38:12,596 - [DEBUG] - [msg]load_id的值为【48552】,在第  3  行,返回值类型 <class 'int'>- test_05_invest.py - 52
+2019-07-23 00:38:12,709 - [DEBUG] - [msg]测试管理员加标,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 00:38:12,711 - [DEBUG] - [msg]获取到的new_data数据为：{"id":"48552","status":4}，在第【4】- test_05_invest.py - 35
+2019-07-23 00:38:12,885 - [DEBUG] - [msg]测试管理员审核,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 00:38:12,890 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456"}，在第【5】- test_05_invest.py - 35
+2019-07-23 00:38:13,069 - [DEBUG] - [msg]测试投资人正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 00:38:13,076 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":"48552","amount":500}，在第【6】- test_05_invest.py - 35
+2019-07-23 00:38:13,137 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":null,"pwd":"123456","loan_id":"48552","amount":500}，在第【7】- test_05_invest.py - 35
+2019-07-23 00:38:13,216 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":null,"loan_id":"48552","amount":500}，在第【8】- test_05_invest.py - 35
+2019-07-23 00:38:13,285 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":null,"amount":500}，在第【9】- test_05_invest.py - 35
+2019-07-23 00:38:13,356 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":"48552","amount":null}，在第【10】- test_05_invest.py - 35
+2019-07-23 00:38:13,420 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"-18817538042","pwd":"123456","loan_id":"48552","amount":500}，在第【11】- test_05_invest.py - 35
+2019-07-23 00:38:13,488 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":0,"pwd":"123456","loan_id":"48552","amount":500}，在第【12】- test_05_invest.py - 35
+2019-07-23 00:38:13,556 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":"-48552","amount":500}，在第【13】- test_05_invest.py - 35
+2019-07-23 00:38:13,632 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":0,"amount":500}，在第【14】- test_05_invest.py - 35
+2019-07-23 00:38:13,701 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":1234,"amount":500}，在第【15】- test_05_invest.py - 35
+2019-07-23 00:38:13,772 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456123456123456123456","loan_id":"48552","amount":500}，在第【16】- test_05_invest.py - 35
+2019-07-23 00:38:13,842 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":"48552","amount":-500}，在第【17】- test_05_invest.py - 35
+2019-07-23 00:38:13,915 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":"48552","amount":505}，在第【18】- test_05_invest.py - 35
+2019-07-23 00:38:13,991 - [DEBUG] - [msg]测试用例执行完毕，投资接口用例停止执行。。。。- test_05_invest.py - 27
+2019-07-23 00:41:08,200 - [DEBUG] - [msg]开始执行投资接口用例。。。。- test_05_invest.py - 22
+2019-07-23 00:41:08,207 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18857429301","pwd":"123456"}，在第【2】- test_05_invest.py - 35
+2019-07-23 00:41:08,431 - [DEBUG] - [msg]测试管理员正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 00:41:08,433 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104171","title":"测试-jason","amount":20000,"loanRate":12.0,"loanTerm":6,"loanDateType":0,"repaymemtWay":11,"biddingDays":5}，在第【3】- test_05_invest.py - 35
+2019-07-23 00:41:08,615 - [DEBUG] - [msg]load_id的值为【48555】,在第  3  行,返回值类型 <class 'int'>- test_05_invest.py - 52
+2019-07-23 00:41:08,725 - [DEBUG] - [msg]测试管理员加标,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 00:41:08,727 - [DEBUG] - [msg]获取到的new_data数据为：{"id":"48555","status":4}，在第【4】- test_05_invest.py - 35
+2019-07-23 00:41:08,893 - [DEBUG] - [msg]测试管理员审核,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 00:41:08,895 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456"}，在第【5】- test_05_invest.py - 35
+2019-07-23 00:41:09,089 - [DEBUG] - [msg]测试投资人正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 00:41:09,095 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":48555,"amount":500}，在第【6】- test_05_invest.py - 35
+2019-07-23 00:41:09,163 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":null,"pwd":"123456","loan_id":"48555","amount":500}，在第【7】- test_05_invest.py - 35
+2019-07-23 00:41:09,251 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":null,"loan_id":"48555","amount":500}，在第【8】- test_05_invest.py - 35
+2019-07-23 00:41:09,320 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":null,"amount":500}，在第【9】- test_05_invest.py - 35
+2019-07-23 00:41:09,409 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":"48555","amount":null}，在第【10】- test_05_invest.py - 35
+2019-07-23 00:41:09,489 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"-18817538042","pwd":"123456","loan_id":"48555","amount":500}，在第【11】- test_05_invest.py - 35
+2019-07-23 00:41:09,551 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":0,"pwd":"123456","loan_id":"48555","amount":500}，在第【12】- test_05_invest.py - 35
+2019-07-23 00:41:09,637 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":"-48555","amount":500}，在第【13】- test_05_invest.py - 35
+2019-07-23 00:41:09,710 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":0,"amount":500}，在第【14】- test_05_invest.py - 35
+2019-07-23 00:41:09,783 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":1234,"amount":500}，在第【15】- test_05_invest.py - 35
+2019-07-23 00:41:09,854 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456123456123456123456","loan_id":"48555","amount":500}，在第【16】- test_05_invest.py - 35
+2019-07-23 00:41:09,930 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":"48555","amount":-500}，在第【17】- test_05_invest.py - 35
+2019-07-23 00:41:10,002 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":"48555","amount":505}，在第【18】- test_05_invest.py - 35
+2019-07-23 00:41:10,064 - [DEBUG] - [msg]测试用例执行完毕，投资接口用例停止执行。。。。- test_05_invest.py - 27
+2019-07-23 00:50:35,322 - [DEBUG] - [msg]开始执行投资接口用例。。。。- test_05_invest.py - 22
+2019-07-23 00:50:35,331 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18857429301","pwd":"123456"}，在第【2】- test_05_invest.py - 35
+2019-07-23 00:50:35,564 - [DEBUG] - [msg]测试管理员正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 00:50:35,567 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104171","title":"测试-jason","amount":20000,"loanRate":12.0,"loanTerm":6,"loanDateType":0,"repaymemtWay":11,"biddingDays":5}，在第【3】- test_05_invest.py - 35
+2019-07-23 00:50:35,785 - [DEBUG] - [msg]load_id的值为【48565】,在第  3  行,返回值类型 <class 'int'>- test_05_invest.py - 52
+2019-07-23 00:50:35,897 - [DEBUG] - [msg]测试管理员加标,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 00:50:35,901 - [DEBUG] - [msg]获取到的new_data数据为：{"id":"48565","status":4}，在第【4】- test_05_invest.py - 35
+2019-07-23 00:50:36,070 - [DEBUG] - [msg]测试管理员审核,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 00:50:36,073 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456"}，在第【5】- test_05_invest.py - 35
+2019-07-23 00:50:36,270 - [DEBUG] - [msg]测试投资人正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 00:50:36,273 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loanId":48565,"amount":500}，在第【6】- test_05_invest.py - 35
+2019-07-23 00:50:36,336 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":null,"pwd":"123456","loan_id":"48565","amount":500}，在第【7】- test_05_invest.py - 35
+2019-07-23 00:50:36,411 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":null,"loan_id":"48565","amount":500}，在第【8】- test_05_invest.py - 35
+2019-07-23 00:50:36,481 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":null,"amount":500}，在第【9】- test_05_invest.py - 35
+2019-07-23 00:50:36,546 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":"48565","amount":null}，在第【10】- test_05_invest.py - 35
+2019-07-23 00:50:36,623 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"-18817538042","pwd":"123456","loan_id":"48565","amount":500}，在第【11】- test_05_invest.py - 35
+2019-07-23 00:50:36,729 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":0,"pwd":"123456","loan_id":"48565","amount":500}，在第【12】- test_05_invest.py - 35
+2019-07-23 00:50:36,793 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":"-48565","amount":500}，在第【13】- test_05_invest.py - 35
+2019-07-23 00:50:36,862 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":0,"amount":500}，在第【14】- test_05_invest.py - 35
+2019-07-23 00:50:36,924 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":1234,"amount":500}，在第【15】- test_05_invest.py - 35
+2019-07-23 00:50:36,984 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456123456123456123456","loan_id":"48565","amount":500}，在第【16】- test_05_invest.py - 35
+2019-07-23 00:50:37,051 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":"48565","amount":-500}，在第【17】- test_05_invest.py - 35
+2019-07-23 00:50:37,113 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":"48565","amount":505}，在第【18】- test_05_invest.py - 35
+2019-07-23 00:50:37,174 - [DEBUG] - [msg]测试用例执行完毕，投资接口用例停止执行。。。。- test_05_invest.py - 27
+2019-07-23 00:52:06,907 - [DEBUG] - [msg]开始执行投资接口用例。。。。- test_05_invest.py - 22
+2019-07-23 00:52:06,914 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18857429301","pwd":"123456"}，在第【2】- test_05_invest.py - 35
+2019-07-23 00:52:07,131 - [DEBUG] - [msg]测试管理员正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 00:52:07,134 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104171","title":"测试-jason","amount":20000,"loanRate":12.0,"loanTerm":6,"loanDateType":0,"repaymemtWay":11,"biddingDays":5}，在第【3】- test_05_invest.py - 35
+2019-07-23 00:52:07,317 - [DEBUG] - [msg]load_id的值为【48568】,在第  3  行,返回值类型 <class 'int'>- test_05_invest.py - 52
+2019-07-23 00:52:07,416 - [DEBUG] - [msg]测试管理员加标,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 00:52:07,419 - [DEBUG] - [msg]获取到的new_data数据为：{"id":"48568","status":4}，在第【4】- test_05_invest.py - 35
+2019-07-23 00:52:07,591 - [DEBUG] - [msg]测试管理员审核,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 00:52:07,593 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456"}，在第【5】- test_05_invest.py - 35
+2019-07-23 00:52:07,772 - [DEBUG] - [msg]测试投资人正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 00:52:07,775 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":18817538042,"pwd":"123456","loanId":48568,"amount":500}，在第【6】- test_05_invest.py - 35
+2019-07-23 00:52:07,848 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":null,"pwd":"123456","loan_id":"48568","amount":500}，在第【7】- test_05_invest.py - 35
+2019-07-23 00:52:07,917 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":null,"loan_id":"48568","amount":500}，在第【8】- test_05_invest.py - 35
+2019-07-23 00:52:07,990 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":null,"amount":500}，在第【9】- test_05_invest.py - 35
+2019-07-23 00:52:08,070 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":"48568","amount":null}，在第【10】- test_05_invest.py - 35
+2019-07-23 00:52:08,135 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"-18817538042","pwd":"123456","loan_id":"48568","amount":500}，在第【11】- test_05_invest.py - 35
+2019-07-23 00:52:08,203 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":0,"pwd":"123456","loan_id":"48568","amount":500}，在第【12】- test_05_invest.py - 35
+2019-07-23 00:52:08,267 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":"-48568","amount":500}，在第【13】- test_05_invest.py - 35
+2019-07-23 00:52:08,329 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":0,"amount":500}，在第【14】- test_05_invest.py - 35
+2019-07-23 00:52:08,398 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":1234,"amount":500}，在第【15】- test_05_invest.py - 35
+2019-07-23 00:52:08,473 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456123456123456123456","loan_id":"48568","amount":500}，在第【16】- test_05_invest.py - 35
+2019-07-23 00:52:08,539 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":"48568","amount":-500}，在第【17】- test_05_invest.py - 35
+2019-07-23 00:52:08,621 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":"48568","amount":505}，在第【18】- test_05_invest.py - 35
+2019-07-23 00:52:08,684 - [DEBUG] - [msg]测试用例执行完毕，投资接口用例停止执行。。。。- test_05_invest.py - 27
+2019-07-23 00:55:30,984 - [DEBUG] - [msg]开始执行投资接口用例。。。。- test_05_invest.py - 22
+2019-07-23 00:55:30,989 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18857429301","pwd":"123456"}，在第【2】- test_05_invest.py - 35
+2019-07-23 00:55:31,207 - [DEBUG] - [msg]测试管理员正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 00:55:31,209 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104171","title":"测试-jason","amount":20000,"loanRate":12.0,"loanTerm":6,"loanDateType":0,"repaymemtWay":11,"biddingDays":5}，在第【3】- test_05_invest.py - 35
+2019-07-23 00:55:31,385 - [DEBUG] - [msg]load_id的值为【48573】,在第  3  行,返回值类型 <class 'int'>- test_05_invest.py - 52
+2019-07-23 00:55:31,489 - [DEBUG] - [msg]测试管理员加标,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 00:55:31,494 - [DEBUG] - [msg]获取到的new_data数据为：{"id":"48573","status":4}，在第【4】- test_05_invest.py - 35
+2019-07-23 00:55:31,664 - [DEBUG] - [msg]测试管理员审核,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 00:55:31,666 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456"}，在第【5】- test_05_invest.py - 35
+2019-07-23 00:55:31,847 - [DEBUG] - [msg]测试投资人正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 00:55:31,849 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":18817538042,"password":"123456","loanId":48573,"amount":500}，在第【6】- test_05_invest.py - 35
+2019-07-23 00:55:31,905 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":null,"pwd":"123456","loan_id":"48573","amount":500}，在第【7】- test_05_invest.py - 35
+2019-07-23 00:55:31,986 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":null,"loan_id":"48573","amount":500}，在第【8】- test_05_invest.py - 35
+2019-07-23 00:55:32,061 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":null,"amount":500}，在第【9】- test_05_invest.py - 35
+2019-07-23 00:55:32,133 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":"48573","amount":null}，在第【10】- test_05_invest.py - 35
+2019-07-23 00:55:32,217 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"-18817538042","pwd":"123456","loan_id":"48573","amount":500}，在第【11】- test_05_invest.py - 35
+2019-07-23 00:55:32,285 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":0,"pwd":"123456","loan_id":"48573","amount":500}，在第【12】- test_05_invest.py - 35
+2019-07-23 00:55:32,362 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":"-48573","amount":500}，在第【13】- test_05_invest.py - 35
+2019-07-23 00:55:32,422 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":0,"amount":500}，在第【14】- test_05_invest.py - 35
+2019-07-23 00:55:32,506 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":1234,"amount":500}，在第【15】- test_05_invest.py - 35
+2019-07-23 00:55:32,572 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456123456123456123456","loan_id":"48573","amount":500}，在第【16】- test_05_invest.py - 35
+2019-07-23 00:55:32,652 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":"48573","amount":-500}，在第【17】- test_05_invest.py - 35
+2019-07-23 00:55:32,734 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456","loan_id":"48573","amount":505}，在第【18】- test_05_invest.py - 35
+2019-07-23 00:55:32,791 - [DEBUG] - [msg]测试用例执行完毕，投资接口用例停止执行。。。。- test_05_invest.py - 27
+2019-07-23 01:07:19,828 - [DEBUG] - [msg]开始执行投资接口用例。。。。- test_05_invest.py - 22
+2019-07-23 01:07:19,840 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18857429301","pwd":"123456"}，在第【2】- test_05_invest.py - 35
+2019-07-23 01:07:20,077 - [DEBUG] - [msg]测试管理员正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:07:20,079 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104171","title":"测试-jason","amount":20000,"loanRate":12.0,"loanTerm":6,"loanDateType":0,"repaymemtWay":11,"biddingDays":5}，在第【3】- test_05_invest.py - 35
+2019-07-23 01:07:20,259 - [DEBUG] - [msg]load_id的值为【48581】,在第  3  行,返回值类型 <class 'int'>- test_05_invest.py - 52
+2019-07-23 01:07:20,363 - [DEBUG] - [msg]测试管理员加标,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:07:20,366 - [DEBUG] - [msg]获取到的new_data数据为：{"id":"48581","status":4}，在第【4】- test_05_invest.py - 35
+2019-07-23 01:07:20,539 - [DEBUG] - [msg]测试管理员审核,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:07:20,541 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"104170","pwd":"123456"}，在第【5】- test_05_invest.py - 35
+2019-07-23 01:07:20,736 - [DEBUG] - [msg]测试投资人正常登陆,用例用例执行失败，结果为:fail,失败原因：测试投资人正常登陆 :: 10001 != 20111- test_05_invest.py - 69
+2019-07-23 01:07:20,743 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":18817538042,"password":"123456","loanId":48581,"amount":500}，在第【6】- test_05_invest.py - 35
+2019-07-23 01:07:20,902 - [DEBUG] - [msg]测试投资人正常投资,用例用例执行失败，结果为:fail,失败原因：测试投资人正常投资 :: 10001 != 11013- test_05_invest.py - 69
+2019-07-23 01:07:20,915 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":null,"password":"123456","loan_id":"48581","amount":500}，在第【7】- test_05_invest.py - 35
+2019-07-23 01:07:21,081 - [DEBUG] - [msg]测试投资人id为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:07:21,090 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"18817538042","password":null,"loan_id":"48581","amount":500}，在第【8】- test_05_invest.py - 35
+2019-07-23 01:07:21,258 - [DEBUG] - [msg]测试投资人密码为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:07:21,266 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"18817538042","password":"123456","loan_id":null,"amount":500}，在第【9】- test_05_invest.py - 35
+2019-07-23 01:07:21,433 - [DEBUG] - [msg]测试标id为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:07:21,442 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"18817538042","password":"123456","loan_id":"48581","amount":null}，在第【10】- test_05_invest.py - 35
+2019-07-23 01:07:21,603 - [DEBUG] - [msg]测试投资金额为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:07:21,606 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"-18817538042","pwd":"123456","loan_id":"48581","amount":500}，在第【11】- test_05_invest.py - 35
+2019-07-23 01:07:21,797 - [DEBUG] - [msg]测试投资人id为负数,用例用例执行失败，结果为:fail,失败原因：测试投资人id为负数 :: 11004 != 11003- test_05_invest.py - 69
+2019-07-23 01:07:21,805 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":0,"pwd":"123456","loan_id":"48581","amount":500}，在第【12】- test_05_invest.py - 35
+2019-07-23 01:07:21,987 - [DEBUG] - [msg]测试投资人id为0,用例用例执行失败，结果为:fail,失败原因：测试投资人id为0 :: 11004 != 11003- test_05_invest.py - 69
+2019-07-23 01:07:21,991 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"18817538042","pwd":"123456","loan_id":"-48581","amount":500}，在第【13】- test_05_invest.py - 35
+2019-07-23 01:07:22,154 - [DEBUG] - [msg]测试标id为负数,用例用例执行失败，结果为:fail,失败原因：测试标id为负数 :: 11005 != 11003- test_05_invest.py - 69
+2019-07-23 01:07:22,164 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"18817538042","pwd":"123456","loan_id":0,"amount":500}，在第【14】- test_05_invest.py - 35
+2019-07-23 01:07:22,331 - [DEBUG] - [msg]测试标id为0,用例用例执行失败，结果为:fail,失败原因：测试标id为0 :: 11005 != 11003- test_05_invest.py - 69
+2019-07-23 01:07:22,343 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"18817538042","pwd":"123456","loan_id":1234,"amount":500}，在第【15】- test_05_invest.py - 35
+2019-07-23 01:07:22,510 - [DEBUG] - [msg]测试投资人密码长度小于6,用例用例执行失败，结果为:fail,失败原因：测试投资人密码长度小于6 :: 11006 != 11003- test_05_invest.py - 69
+2019-07-23 01:07:22,514 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"18817538042","pwd":"123456123456123456123456","loan_id":"48581","amount":500}，在第【16】- test_05_invest.py - 35
+2019-07-23 01:07:22,682 - [DEBUG] - [msg]测试投资人密码长度大于18,用例用例执行失败，结果为:fail,失败原因：测试投资人密码长度大于18 :: 11006 != 11003- test_05_invest.py - 69
+2019-07-23 01:07:22,686 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"18817538042","pwd":"123456","loan_id":"48581","amount":-500}，在第【17】- test_05_invest.py - 35
+2019-07-23 01:07:22,876 - [DEBUG] - [msg]测试投资金额为负数,用例用例执行失败，结果为:fail,失败原因：测试投资金额为负数 :: 11007 != 11003- test_05_invest.py - 69
+2019-07-23 01:07:22,879 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"18817538042","pwd":"123456","loan_id":"48581","amount":505}，在第【18】- test_05_invest.py - 35
+2019-07-23 01:07:23,044 - [DEBUG] - [msg]测试投资金额为不能被100整除的数,用例用例执行失败，结果为:fail,失败原因：测试投资金额为不能被100整除的数 :: 11007 != 11003- test_05_invest.py - 69
+2019-07-23 01:07:23,045 - [DEBUG] - [msg]测试用例执行完毕，投资接口用例停止执行。。。。- test_05_invest.py - 27
+2019-07-23 01:10:00,082 - [DEBUG] - [msg]开始执行投资接口用例。。。。- test_05_invest.py - 22
+2019-07-23 01:10:00,088 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18857429301","pwd":"123456"}，在第【2】- test_05_invest.py - 35
+2019-07-23 01:10:00,297 - [DEBUG] - [msg]测试管理员正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:10:00,303 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104171","title":"测试-jason","amount":20000,"loanRate":12.0,"loanTerm":6,"loanDateType":0,"repaymemtWay":11,"biddingDays":5}，在第【3】- test_05_invest.py - 35
+2019-07-23 01:10:00,481 - [DEBUG] - [msg]load_id的值为【48582】,在第  3  行,返回值类型 <class 'int'>- test_05_invest.py - 52
+2019-07-23 01:10:00,586 - [DEBUG] - [msg]测试管理员加标,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:10:00,589 - [DEBUG] - [msg]获取到的new_data数据为：{"id":"48582","status":4}，在第【4】- test_05_invest.py - 35
+2019-07-23 01:10:00,758 - [DEBUG] - [msg]测试管理员审核,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:10:00,762 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456"}，在第【5】- test_05_invest.py - 35
+2019-07-23 01:10:00,947 - [DEBUG] - [msg]测试投资人正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:10:00,949 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":18817538042,"password":"123456","loanId":48582,"amount":500}，在第【6】- test_05_invest.py - 35
+2019-07-23 01:10:01,103 - [DEBUG] - [msg]测试投资人正常投资,用例用例执行失败，结果为:fail,失败原因：测试投资人正常投资 :: 10001 != 11013- test_05_invest.py - 69
+2019-07-23 01:10:01,107 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":null,"password":"123456","loanId":"48582","amount":500}，在第【7】- test_05_invest.py - 35
+2019-07-23 01:10:01,265 - [DEBUG] - [msg]测试投资人id为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:10:01,268 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"18817538042","password":null,"loan_id":"${loanId}","amount":500}，在第【8】- test_05_invest.py - 35
+2019-07-23 01:10:01,440 - [DEBUG] - [msg]测试投资人密码为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:10:01,443 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"18817538042","password":"123456","loanId":null,"amount":500}，在第【9】- test_05_invest.py - 35
+2019-07-23 01:10:01,603 - [DEBUG] - [msg]测试标id为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:10:01,605 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"18817538042","password":"123456","loan_id":"48582","amount":null}，在第【10】- test_05_invest.py - 35
+2019-07-23 01:10:01,771 - [DEBUG] - [msg]测试投资金额为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:10:01,773 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"-18817538042","pwd":"123456","loan_id":"48582","amount":500}，在第【11】- test_05_invest.py - 35
+2019-07-23 01:10:01,993 - [DEBUG] - [msg]测试投资人id为负数,用例用例执行失败，结果为:fail,失败原因：测试投资人id为负数 :: 11004 != 11003- test_05_invest.py - 69
+2019-07-23 01:10:01,996 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":0,"pwd":"123456","loan_id":"48582","amount":500}，在第【12】- test_05_invest.py - 35
+2019-07-23 01:10:02,163 - [DEBUG] - [msg]测试投资人id为0,用例用例执行失败，结果为:fail,失败原因：测试投资人id为0 :: 11004 != 11003- test_05_invest.py - 69
+2019-07-23 01:10:02,169 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"18817538042","pwd":"123456","loan_id":"-48582","amount":500}，在第【13】- test_05_invest.py - 35
+2019-07-23 01:10:02,340 - [DEBUG] - [msg]测试标id为负数,用例用例执行失败，结果为:fail,失败原因：测试标id为负数 :: 11005 != 11003- test_05_invest.py - 69
+2019-07-23 01:10:02,351 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"18817538042","pwd":"123456","loan_id":0,"amount":500}，在第【14】- test_05_invest.py - 35
+2019-07-23 01:10:02,515 - [DEBUG] - [msg]测试标id为0,用例用例执行失败，结果为:fail,失败原因：测试标id为0 :: 11005 != 11003- test_05_invest.py - 69
+2019-07-23 01:10:02,527 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"18817538042","pwd":"123456","loan_id":1234,"amount":500}，在第【15】- test_05_invest.py - 35
+2019-07-23 01:10:02,687 - [DEBUG] - [msg]测试投资人密码长度小于6,用例用例执行失败，结果为:fail,失败原因：测试投资人密码长度小于6 :: 11006 != 11003- test_05_invest.py - 69
+2019-07-23 01:10:02,697 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"18817538042","pwd":"123456123456123456123456","loan_id":"48582","amount":500}，在第【16】- test_05_invest.py - 35
+2019-07-23 01:10:02,861 - [DEBUG] - [msg]测试投资人密码长度大于18,用例用例执行失败，结果为:fail,失败原因：测试投资人密码长度大于18 :: 11006 != 11003- test_05_invest.py - 69
+2019-07-23 01:10:02,865 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"18817538042","pwd":"123456","loan_id":"48582","amount":-500}，在第【17】- test_05_invest.py - 35
+2019-07-23 01:10:03,058 - [DEBUG] - [msg]测试投资金额为负数,用例用例执行失败，结果为:fail,失败原因：测试投资金额为负数 :: 11007 != 11003- test_05_invest.py - 69
+2019-07-23 01:10:03,062 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"18817538042","pwd":"123456","loan_id":"48582","amount":505}，在第【18】- test_05_invest.py - 35
+2019-07-23 01:10:03,235 - [DEBUG] - [msg]测试投资金额为不能被100整除的数,用例用例执行失败，结果为:fail,失败原因：测试投资金额为不能被100整除的数 :: 11007 != 11003- test_05_invest.py - 69
+2019-07-23 01:10:03,236 - [DEBUG] - [msg]测试用例执行完毕，投资接口用例停止执行。。。。- test_05_invest.py - 27
+2019-07-23 01:14:23,344 - [DEBUG] - [msg]开始执行投资接口用例。。。。- test_05_invest.py - 22
+2019-07-23 01:14:23,351 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18857429301","pwd":"123456"}，在第【2】- test_05_invest.py - 35
+2019-07-23 01:14:23,570 - [DEBUG] - [msg]测试管理员正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:14:23,573 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104171","title":"测试-jason","amount":20000,"loanRate":12.0,"loanTerm":6,"loanDateType":0,"repaymemtWay":11,"biddingDays":5}，在第【3】- test_05_invest.py - 35
+2019-07-23 01:14:23,755 - [DEBUG] - [msg]load_id的值为【48583】,在第  3  行,返回值类型 <class 'int'>- test_05_invest.py - 52
+2019-07-23 01:14:23,869 - [DEBUG] - [msg]测试管理员加标,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:14:23,872 - [DEBUG] - [msg]获取到的new_data数据为：{"id":"48583","status":4}，在第【4】- test_05_invest.py - 35
+2019-07-23 01:14:24,038 - [DEBUG] - [msg]测试管理员审核,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:14:24,041 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456"}，在第【5】- test_05_invest.py - 35
+2019-07-23 01:14:24,235 - [DEBUG] - [msg]测试投资人正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:14:24,238 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":104170,"password":"123456","loanId":48583,"amount":500}，在第【6】- test_05_invest.py - 35
+2019-07-23 01:14:24,424 - [DEBUG] - [msg]测试投资人正常投资,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:14:24,427 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":null,"password":"123456","loanId":"48583","amount":500}，在第【7】- test_05_invest.py - 35
+2019-07-23 01:14:24,600 - [DEBUG] - [msg]测试投资人id为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:14:24,603 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":null,"loanId":"48583","amount":500}，在第【8】- test_05_invest.py - 35
+2019-07-23 01:14:24,774 - [DEBUG] - [msg]测试投资人密码为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:14:24,777 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":null,"amount":500}，在第【9】- test_05_invest.py - 35
+2019-07-23 01:14:24,953 - [DEBUG] - [msg]测试标id为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:14:24,956 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":"48583","amount":null}，在第【10】- test_05_invest.py - 35
+2019-07-23 01:14:25,137 - [DEBUG] - [msg]测试投资金额为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:14:25,156 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"-104170","password":"123456","loanId":"48583","amount":500}，在第【11】- test_05_invest.py - 35
+2019-07-23 01:14:25,344 - [DEBUG] - [msg]测试投资人id为负数,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:14:25,347 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":0,"password":"123456","loanId":"48583","amount":500}，在第【12】- test_05_invest.py - 35
+2019-07-23 01:14:25,524 - [DEBUG] - [msg]测试投资人id为0,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:14:25,527 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","pwd":"123456","loan_id":"-48583","amount":500}，在第【13】- test_05_invest.py - 35
+2019-07-23 01:14:25,689 - [DEBUG] - [msg]测试标id为负数,用例用例执行失败，结果为:fail,失败原因：测试标id为负数 :: 11005 != 11003- test_05_invest.py - 69
+2019-07-23 01:14:25,693 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","pwd":"123456","loan_id":0,"amount":500}，在第【14】- test_05_invest.py - 35
+2019-07-23 01:14:25,866 - [DEBUG] - [msg]测试标id为0,用例用例执行失败，结果为:fail,失败原因：测试标id为0 :: 11005 != 11003- test_05_invest.py - 69
+2019-07-23 01:14:25,870 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","pwd":"123456","loan_id":1234,"amount":500}，在第【15】- test_05_invest.py - 35
+2019-07-23 01:14:26,043 - [DEBUG] - [msg]测试投资人密码长度小于6,用例用例执行失败，结果为:fail,失败原因：测试投资人密码长度小于6 :: 11006 != 11003- test_05_invest.py - 69
+2019-07-23 01:14:26,047 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","pwd":"123456123456123456123456","loan_id":"48583","amount":500}，在第【16】- test_05_invest.py - 35
+2019-07-23 01:14:26,215 - [DEBUG] - [msg]测试投资人密码长度大于18,用例用例执行失败，结果为:fail,失败原因：测试投资人密码长度大于18 :: 11006 != 11003- test_05_invest.py - 69
+2019-07-23 01:14:26,227 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","pwd":"123456","loan_id":"48583","amount":-500}，在第【17】- test_05_invest.py - 35
+2019-07-23 01:14:26,409 - [DEBUG] - [msg]测试投资金额为负数,用例用例执行失败，结果为:fail,失败原因：测试投资金额为负数 :: 11007 != 11003- test_05_invest.py - 69
+2019-07-23 01:14:26,412 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","pwd":"123456","loan_id":"48583","amount":505}，在第【18】- test_05_invest.py - 35
+2019-07-23 01:14:26,577 - [DEBUG] - [msg]测试投资金额为不能被100整除的数,用例用例执行失败，结果为:fail,失败原因：测试投资金额为不能被100整除的数 :: 11007 != 11003- test_05_invest.py - 69
+2019-07-23 01:14:26,579 - [DEBUG] - [msg]测试用例执行完毕，投资接口用例停止执行。。。。- test_05_invest.py - 27
+2019-07-23 01:17:12,874 - [DEBUG] - [msg]开始执行投资接口用例。。。。- test_05_invest.py - 22
+2019-07-23 01:17:12,880 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18857429301","pwd":"123456"}，在第【2】- test_05_invest.py - 35
+2019-07-23 01:17:13,100 - [DEBUG] - [msg]测试管理员正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:17:13,102 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104171","title":"测试-jason","amount":20000,"loanRate":12.0,"loanTerm":6,"loanDateType":0,"repaymemtWay":11,"biddingDays":5}，在第【3】- test_05_invest.py - 35
+2019-07-23 01:17:13,290 - [DEBUG] - [msg]load_id的值为【48585】,在第  3  行,返回值类型 <class 'int'>- test_05_invest.py - 52
+2019-07-23 01:17:13,388 - [DEBUG] - [msg]测试管理员加标,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:17:13,391 - [DEBUG] - [msg]获取到的new_data数据为：{"id":"48585","status":4}，在第【4】- test_05_invest.py - 35
+2019-07-23 01:17:13,565 - [DEBUG] - [msg]测试管理员审核,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:17:13,569 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456"}，在第【5】- test_05_invest.py - 35
+2019-07-23 01:17:13,762 - [DEBUG] - [msg]测试投资人正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:17:13,765 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":104170,"password":"123456","loanId":48585,"amount":500}，在第【6】- test_05_invest.py - 35
+2019-07-23 01:17:13,937 - [DEBUG] - [msg]测试投资人正常投资,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:17:13,946 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":null,"password":"123456","loanId":"48585","amount":500}，在第【7】- test_05_invest.py - 35
+2019-07-23 01:17:14,123 - [DEBUG] - [msg]测试投资人id为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:17:14,125 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":null,"loanId":"48585","amount":500}，在第【8】- test_05_invest.py - 35
+2019-07-23 01:17:14,297 - [DEBUG] - [msg]测试投资人密码为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:17:14,300 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":null,"amount":500}，在第【9】- test_05_invest.py - 35
+2019-07-23 01:17:14,465 - [DEBUG] - [msg]测试标id为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:17:14,468 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":"48585","amount":null}，在第【10】- test_05_invest.py - 35
+2019-07-23 01:17:14,654 - [DEBUG] - [msg]测试投资金额为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:17:14,657 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"-104170","password":"123456","loanId":"48585","amount":500}，在第【11】- test_05_invest.py - 35
+2019-07-23 01:17:14,840 - [DEBUG] - [msg]测试投资人id为负数,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:17:14,847 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":0,"password":"123456","loanId":"48585","amount":500}，在第【12】- test_05_invest.py - 35
+2019-07-23 01:17:15,011 - [DEBUG] - [msg]测试投资人id为0,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:17:15,013 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":"-48585","amount":500}，在第【13】- test_05_invest.py - 35
+2019-07-23 01:17:15,187 - [DEBUG] - [msg]测试标id为负数,用例用例执行失败，结果为:fail,失败原因：测试标id为负数 :: 11005 != 11009- test_05_invest.py - 69
+2019-07-23 01:17:15,191 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loan_id":0,"amount":500}，在第【14】- test_05_invest.py - 35
+2019-07-23 01:17:15,368 - [DEBUG] - [msg]测试标id为0,用例用例执行失败，结果为:fail,失败原因：测试标id为0 :: 11005 != 11003- test_05_invest.py - 69
+2019-07-23 01:17:15,372 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":1234,"amount":500}，在第【15】- test_05_invest.py - 35
+2019-07-23 01:17:15,560 - [DEBUG] - [msg]测试投资人密码长度小于6,用例用例执行失败，结果为:fail,失败原因：测试投资人密码长度小于6 :: 11006 != 10001- test_05_invest.py - 69
+2019-07-23 01:17:15,564 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456123456123456123456","loanId":"48585","amount":500}，在第【16】- test_05_invest.py - 35
+2019-07-23 01:17:15,729 - [DEBUG] - [msg]测试投资人密码长度大于18,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:17:15,732 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":"48585","amount":-500}，在第【17】- test_05_invest.py - 35
+2019-07-23 01:17:15,923 - [DEBUG] - [msg]测试投资金额为负数,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:17:15,925 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":"48585","amount":505}，在第【18】- test_05_invest.py - 35
+2019-07-23 01:17:16,095 - [DEBUG] - [msg]测试投资金额为不能被100整除的数,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:17:16,095 - [DEBUG] - [msg]测试用例执行完毕，投资接口用例停止执行。。。。- test_05_invest.py - 27
+2019-07-23 01:20:48,054 - [DEBUG] - [msg]开始执行投资接口用例。。。。- test_05_invest.py - 22
+2019-07-23 01:20:48,065 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18857429301","pwd":"123456"}，在第【2】- test_05_invest.py - 35
+2019-07-23 01:20:48,290 - [DEBUG] - [msg]测试管理员正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:20:48,293 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104171","title":"测试-jason","amount":20000,"loanRate":12.0,"loanTerm":6,"loanDateType":0,"repaymemtWay":11,"biddingDays":5}，在第【3】- test_05_invest.py - 35
+2019-07-23 01:20:48,488 - [DEBUG] - [msg]load_id的值为【48588】,在第  3  行,返回值类型 <class 'int'>- test_05_invest.py - 52
+2019-07-23 01:20:48,590 - [DEBUG] - [msg]测试管理员加标,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:20:48,601 - [DEBUG] - [msg]获取到的new_data数据为：{"id":"48588","status":4}，在第【4】- test_05_invest.py - 35
+2019-07-23 01:20:48,787 - [DEBUG] - [msg]测试管理员审核,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:20:48,789 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456"}，在第【5】- test_05_invest.py - 35
+2019-07-23 01:20:48,965 - [DEBUG] - [msg]测试投资人正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:20:48,967 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":104170,"password":"123456","loanId":48588,"amount":500}，在第【6】- test_05_invest.py - 35
+2019-07-23 01:20:49,148 - [DEBUG] - [msg]测试投资人正常投资,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:20:49,151 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":null,"password":"123456","loanId":"48588","amount":500}，在第【7】- test_05_invest.py - 35
+2019-07-23 01:20:49,332 - [DEBUG] - [msg]测试投资人id为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:20:49,340 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":null,"loanId":"48588","amount":500}，在第【8】- test_05_invest.py - 35
+2019-07-23 01:20:49,528 - [DEBUG] - [msg]测试投资人密码为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:20:49,531 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":null,"amount":500}，在第【9】- test_05_invest.py - 35
+2019-07-23 01:20:49,702 - [DEBUG] - [msg]测试标id为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:20:49,704 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":"48588","amount":null}，在第【10】- test_05_invest.py - 35
+2019-07-23 01:20:49,896 - [DEBUG] - [msg]测试投资金额为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:20:49,901 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"-104170","password":"123456","loanId":"48588","amount":500}，在第【11】- test_05_invest.py - 35
+2019-07-23 01:20:50,081 - [DEBUG] - [msg]测试投资人id为负数,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:20:50,086 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":0,"password":"123456","loanId":"48588","amount":500}，在第【12】- test_05_invest.py - 35
+2019-07-23 01:20:50,247 - [DEBUG] - [msg]测试投资人id为0,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:20:50,250 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":"-48588","amount":500}，在第【13】- test_05_invest.py - 35
+2019-07-23 01:20:50,417 - [DEBUG] - [msg]测试标id为负数,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:20:50,420 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loan_id":0,"amount":500}，在第【14】- test_05_invest.py - 35
+2019-07-23 01:20:50,602 - [DEBUG] - [msg]测试标id为0,用例用例执行失败，结果为:fail,失败原因：测试标id为0 :: 11005 != 11003- test_05_invest.py - 69
+2019-07-23 01:20:50,606 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"1234","loanId":"48588","amount":500}，在第【15】- test_05_invest.py - 35
+2019-07-23 01:20:50,782 - [DEBUG] - [msg]测试投资人密码长度小于6,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:20:50,799 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456123456123456123456","loanId":"48588","amount":500}，在第【16】- test_05_invest.py - 35
+2019-07-23 01:20:50,964 - [DEBUG] - [msg]测试投资人密码长度大于18,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:20:50,966 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":"48588","amount":-500}，在第【17】- test_05_invest.py - 35
+2019-07-23 01:20:51,161 - [DEBUG] - [msg]测试投资金额为负数,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:20:51,164 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":"48588","amount":505}，在第【18】- test_05_invest.py - 35
+2019-07-23 01:20:51,346 - [DEBUG] - [msg]测试投资金额为不能被100整除的数,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:20:51,346 - [DEBUG] - [msg]测试用例执行完毕，投资接口用例停止执行。。。。- test_05_invest.py - 27
+2019-07-23 01:23:00,272 - [DEBUG] - [msg]开始执行投资接口用例。。。。- test_05_invest.py - 22
+2019-07-23 01:23:00,283 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18857429301","pwd":"123456"}，在第【2】- test_05_invest.py - 35
+2019-07-23 01:23:00,507 - [DEBUG] - [msg]测试管理员正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:23:00,510 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104171","title":"测试-jason","amount":20000,"loanRate":12.0,"loanTerm":6,"loanDateType":0,"repaymemtWay":11,"biddingDays":5}，在第【3】- test_05_invest.py - 35
+2019-07-23 01:23:00,693 - [DEBUG] - [msg]load_id的值为【48589】,在第  3  行,返回值类型 <class 'int'>- test_05_invest.py - 52
+2019-07-23 01:23:00,799 - [DEBUG] - [msg]测试管理员加标,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:23:00,802 - [DEBUG] - [msg]获取到的new_data数据为：{"id":"48589","status":4}，在第【4】- test_05_invest.py - 35
+2019-07-23 01:23:00,968 - [DEBUG] - [msg]测试管理员审核,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:23:00,971 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456"}，在第【5】- test_05_invest.py - 35
+2019-07-23 01:23:01,157 - [DEBUG] - [msg]测试投资人正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:23:01,159 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":48589,"amount":500}，在第【6】- test_05_invest.py - 35
+2019-07-23 01:23:01,356 - [DEBUG] - [msg]测试投资人正常投资,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:23:01,358 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":null,"password":"123456","loanId":"48589","amount":500}，在第【7】- test_05_invest.py - 35
+2019-07-23 01:23:01,531 - [DEBUG] - [msg]测试投资人id为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:23:01,534 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":null,"loanId":"48589","amount":500}，在第【8】- test_05_invest.py - 35
+2019-07-23 01:23:01,703 - [DEBUG] - [msg]测试投资人密码为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:23:01,706 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":null,"amount":500}，在第【9】- test_05_invest.py - 35
+2019-07-23 01:23:01,871 - [DEBUG] - [msg]测试标id为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:23:01,874 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":"48589","amount":null}，在第【10】- test_05_invest.py - 35
+2019-07-23 01:23:02,040 - [DEBUG] - [msg]测试投资金额为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:23:02,050 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"-104170","password":"123456","loanId":"48589","amount":500}，在第【11】- test_05_invest.py - 35
+2019-07-23 01:23:02,232 - [DEBUG] - [msg]测试投资人id为负数,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:23:02,238 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":0,"password":"123456","loanId":"48589","amount":500}，在第【12】- test_05_invest.py - 35
+2019-07-23 01:23:02,400 - [DEBUG] - [msg]测试投资人id为0,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:23:02,409 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":"-48589","amount":500}，在第【13】- test_05_invest.py - 35
+2019-07-23 01:23:02,570 - [DEBUG] - [msg]测试标id为负数,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:23:02,573 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loan_id":0,"amount":500}，在第【14】- test_05_invest.py - 35
+2019-07-23 01:23:02,740 - [DEBUG] - [msg]测试标id为0,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:23:02,742 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"1234","loanId":"48589","amount":500}，在第【15】- test_05_invest.py - 35
+2019-07-23 01:23:02,912 - [DEBUG] - [msg]测试投资人密码长度小于6,用例用例执行失败，结果为:fail,失败原因：测试投资人密码长度小于6 :: 11005 != 11006- test_05_invest.py - 69
+2019-07-23 01:23:02,919 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456123456123456123456","loanId":"48589","amount":500}，在第【16】- test_05_invest.py - 35
+2019-07-23 01:23:03,097 - [DEBUG] - [msg]测试投资人密码长度大于18,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:23:03,105 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":"48589","amount":-500}，在第【17】- test_05_invest.py - 35
+2019-07-23 01:23:03,291 - [DEBUG] - [msg]测试投资金额为负数,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:23:03,295 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":"48589","amount":505}，在第【18】- test_05_invest.py - 35
+2019-07-23 01:23:03,482 - [DEBUG] - [msg]测试投资金额为不能被100整除的数,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:23:03,483 - [DEBUG] - [msg]测试用例执行完毕，投资接口用例停止执行。。。。- test_05_invest.py - 27
+2019-07-23 01:26:29,542 - [DEBUG] - [msg]开始执行投资接口用例。。。。- test_05_invest.py - 22
+2019-07-23 01:26:29,551 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18857429301","pwd":"123456"}，在第【2】- test_05_invest.py - 35
+2019-07-23 01:26:29,823 - [DEBUG] - [msg]测试管理员正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:29,826 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104171","title":"测试-jason","amount":20000,"loanRate":12.0,"loanTerm":6,"loanDateType":0,"repaymemtWay":11,"biddingDays":5}，在第【3】- test_05_invest.py - 35
+2019-07-23 01:26:30,008 - [DEBUG] - [msg]load_id的值为【48590】,在第  3  行,返回值类型 <class 'int'>- test_05_invest.py - 52
+2019-07-23 01:26:30,113 - [DEBUG] - [msg]测试管理员加标,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:30,116 - [DEBUG] - [msg]获取到的new_data数据为：{"id":"48590","status":4}，在第【4】- test_05_invest.py - 35
+2019-07-23 01:26:30,284 - [DEBUG] - [msg]测试管理员审核,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:30,288 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456"}，在第【5】- test_05_invest.py - 35
+2019-07-23 01:26:30,471 - [DEBUG] - [msg]测试投资人正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:30,473 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":48590,"amount":500}，在第【6】- test_05_invest.py - 35
+2019-07-23 01:26:30,647 - [DEBUG] - [msg]测试投资人正常投资,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:30,649 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":null,"password":"123456","loanId":"48590","amount":500}，在第【7】- test_05_invest.py - 35
+2019-07-23 01:26:30,815 - [DEBUG] - [msg]测试投资人id为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:30,817 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":null,"loanId":"48590","amount":500}，在第【8】- test_05_invest.py - 35
+2019-07-23 01:26:30,991 - [DEBUG] - [msg]测试投资人密码为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:30,993 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":null,"amount":500}，在第【9】- test_05_invest.py - 35
+2019-07-23 01:26:31,167 - [DEBUG] - [msg]测试标id为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:31,170 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":"48590","amount":null}，在第【10】- test_05_invest.py - 35
+2019-07-23 01:26:31,337 - [DEBUG] - [msg]测试投资金额为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:31,340 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"-104170","password":"123456","loanId":"48590","amount":500}，在第【11】- test_05_invest.py - 35
+2019-07-23 01:26:31,534 - [DEBUG] - [msg]测试投资人id为负数,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:31,543 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":0,"password":"123456","loanId":"48590","amount":500}，在第【12】- test_05_invest.py - 35
+2019-07-23 01:26:31,710 - [DEBUG] - [msg]测试投资人id为0,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:31,712 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":"-48590","amount":500}，在第【13】- test_05_invest.py - 35
+2019-07-23 01:26:31,886 - [DEBUG] - [msg]测试标id为负数,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:31,889 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loan_id":0,"amount":500}，在第【14】- test_05_invest.py - 35
+2019-07-23 01:26:32,056 - [DEBUG] - [msg]测试标id为0,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:32,058 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"1234","loanId":"48590","amount":500}，在第【15】- test_05_invest.py - 35
+2019-07-23 01:26:32,217 - [DEBUG] - [msg]测试投资人密码长度小于6,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:32,221 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456123456123456123456","loanId":"48590","amount":500}，在第【16】- test_05_invest.py - 35
+2019-07-23 01:26:32,389 - [DEBUG] - [msg]测试投资人密码长度大于18,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:32,391 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":"48590","amount":-500}，在第【17】- test_05_invest.py - 35
+2019-07-23 01:26:32,573 - [DEBUG] - [msg]测试投资金额为负数,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:32,578 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":"48590","amount":505}，在第【18】- test_05_invest.py - 35
+2019-07-23 01:26:32,739 - [DEBUG] - [msg]测试投资金额为不能被100整除的数,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:32,742 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"18817538042","password":"123456","loanId":"48590","amount":500}，在第【19】- test_05_invest.py - 35
+2019-07-23 01:26:32,912 - [DEBUG] - [msg]测试投资人id不存在,用例用例执行失败，结果为:fail,失败原因：测试投资人id不存在 :: 11003 != 11013- test_05_invest.py - 69
+2019-07-23 01:26:32,914 - [DEBUG] - [msg]测试用例执行完毕，投资接口用例停止执行。。。。- test_05_invest.py - 27
+2019-07-23 01:26:55,194 - [DEBUG] - [msg]开始执行投资接口用例。。。。- test_05_invest.py - 22
+2019-07-23 01:26:55,206 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18857429301","pwd":"123456"}，在第【2】- test_05_invest.py - 35
+2019-07-23 01:26:55,423 - [DEBUG] - [msg]测试管理员正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:55,430 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104171","title":"测试-jason","amount":20000,"loanRate":12.0,"loanTerm":6,"loanDateType":0,"repaymemtWay":11,"biddingDays":5}，在第【3】- test_05_invest.py - 35
+2019-07-23 01:26:55,605 - [DEBUG] - [msg]load_id的值为【48591】,在第  3  行,返回值类型 <class 'int'>- test_05_invest.py - 52
+2019-07-23 01:26:55,709 - [DEBUG] - [msg]测试管理员加标,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:55,712 - [DEBUG] - [msg]获取到的new_data数据为：{"id":"48591","status":4}，在第【4】- test_05_invest.py - 35
+2019-07-23 01:26:55,896 - [DEBUG] - [msg]测试管理员审核,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:55,898 - [DEBUG] - [msg]获取到的new_data数据为：{"mobilephone":"18817538042","pwd":"123456"}，在第【5】- test_05_invest.py - 35
+2019-07-23 01:26:56,072 - [DEBUG] - [msg]测试投资人正常登陆,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:56,075 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":48591,"amount":500}，在第【6】- test_05_invest.py - 35
+2019-07-23 01:26:56,262 - [DEBUG] - [msg]测试投资人正常投资,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:56,266 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":null,"password":"123456","loanId":"48591","amount":500}，在第【7】- test_05_invest.py - 35
+2019-07-23 01:26:56,443 - [DEBUG] - [msg]测试投资人id为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:56,445 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":null,"loanId":"48591","amount":500}，在第【8】- test_05_invest.py - 35
+2019-07-23 01:26:56,629 - [DEBUG] - [msg]测试投资人密码为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:56,631 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":null,"amount":500}，在第【9】- test_05_invest.py - 35
+2019-07-23 01:26:56,800 - [DEBUG] - [msg]测试标id为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:56,809 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":"48591","amount":null}，在第【10】- test_05_invest.py - 35
+2019-07-23 01:26:56,986 - [DEBUG] - [msg]测试投资金额为空,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:56,997 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"-104170","password":"123456","loanId":"48591","amount":500}，在第【11】- test_05_invest.py - 35
+2019-07-23 01:26:57,173 - [DEBUG] - [msg]测试投资人id为负数,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:57,175 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":0,"password":"123456","loanId":"48591","amount":500}，在第【12】- test_05_invest.py - 35
+2019-07-23 01:26:57,337 - [DEBUG] - [msg]测试投资人id为0,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:57,341 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":"-48591","amount":500}，在第【13】- test_05_invest.py - 35
+2019-07-23 01:26:57,506 - [DEBUG] - [msg]测试标id为负数,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:57,512 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loan_id":0,"amount":500}，在第【14】- test_05_invest.py - 35
+2019-07-23 01:26:57,674 - [DEBUG] - [msg]测试标id为0,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:57,676 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"1234","loanId":"48591","amount":500}，在第【15】- test_05_invest.py - 35
+2019-07-23 01:26:57,843 - [DEBUG] - [msg]测试投资人密码长度小于6,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:57,846 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456123456123456123456","loanId":"48591","amount":500}，在第【16】- test_05_invest.py - 35
+2019-07-23 01:26:58,016 - [DEBUG] - [msg]测试投资人密码长度大于18,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:58,019 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":"48591","amount":-500}，在第【17】- test_05_invest.py - 35
+2019-07-23 01:26:58,207 - [DEBUG] - [msg]测试投资金额为负数,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:58,209 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"104170","password":"123456","loanId":"48591","amount":505}，在第【18】- test_05_invest.py - 35
+2019-07-23 01:26:58,376 - [DEBUG] - [msg]测试投资金额为不能被100整除的数,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:58,379 - [DEBUG] - [msg]获取到的new_data数据为：{"memberId":"18817538042","password":"123456","loanId":"48591","amount":500}，在第【19】- test_05_invest.py - 35
+2019-07-23 01:26:58,556 - [DEBUG] - [msg]测试投资人id不存在,用例执行成功,执行结果为:pass- test_05_invest.py - 66
+2019-07-23 01:26:58,556 - [DEBUG] - [msg]测试用例执行完毕，投资接口用例停止执行。。。。- test_05_invest.py - 27

@@ -1,0 +1,1362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>验证注册接口</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    
+<style type="text/css" media="screen">
+body        { font-family: Microsoft YaHei,Tahoma,arial,helvetica,sans-serif;padding: 20px; font-size: 120%; }
+table       { font-size: 100%; }
+/* -- heading ---------------------------------------------------------------------- */
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+/* -- report ------------------------------------------------------------------------ */
+#total_row  { font-weight: bold; }
+.passCase   { color: #5cb85c; }
+.failCase   { color: #d9534f; font-weight: bold; }
+.errorCase  { color: #f0ad4e; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+</style>
+
+</head>
+<body >
+<script language="javascript" type="text/javascript">
+output_list = Array();
+/*level 调整增加只显示通过用例的分类 --Findyou
+0:Summary //all hiddenRow
+1:Failed  //pt hiddenRow, ft none
+2:Pass    //pt none, ft hiddenRow
+3:All     //pt none, ft none
+*/
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level == 2 || level == 0 ) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level < 2) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+    }
+    //加入【详细】切换文字变化 --Findyou
+    detail_class=document.getElementsByClassName('detail');
+	//console.log(detail_class.length)
+	if (level == 3) {
+		for (var i = 0; i < detail_class.length; i++){
+			detail_class[i].innerHTML="收起"
+		}
+	}
+	else{
+			for (var i = 0; i < detail_class.length; i++){
+			detail_class[i].innerHTML="详细"
+		}
+	}
+}
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        //ID修改 点 为 下划线 -Findyou
+        tid0 = 't' + cid.substr(1) + '_' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        //修改点击无法收起的BUG，加入【详细】切换文字变化 --Findyou
+        if (toHide) {
+            document.getElementById(tid).className = 'hiddenRow';
+            document.getElementById(cid).innerText = "详细"
+        }
+        else {
+            document.getElementById(tid).className = '';
+            document.getElementById(cid).innerText = "收起"
+        }
+    }
+}
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+</script>
+<div class='heading'>
+<h1 style="font-family: Microsoft YaHei">验证注册接口</h1>
+<p class='attribute'><strong>测试人员 : </strong> gordon</p>
+<p class='attribute'><strong>开始时间 : </strong> 2019-07-27 23:17:58</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:15.634179</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 95，通过 68，错误 27，通过率= 71.58%</p>
+
+<p class='description'></p>
+</div>
+
+
+<p id='show_detail_line'>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 71.58% }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 68 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 95 }</a>
+</p>
+<table id='result_table' class="table table-condensed table-bordered table-hover">
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row' class="text-center success" style="font-weight: bold;font-size: 16px;">
+    <td>用例集/测试用例</td>
+    <td>总计</td>
+    <td>通过</td>
+    <td>失败</td>
+    <td>错误</td>
+    <td>详细</td>
+</tr>
+
+<tr class='errorClass warning'>
+    <td>test_01_register.TestRegister</td>
+    <td class="text-center">37</td>
+    <td class="text-center">10</td>
+    <td class="text-center">0</td>
+    <td class="text-center">27</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',37)" class="detail" id='c1'>详细</a></td>
+</tr>
+
+<tr id='pt1_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_register_01_注册成功_完整</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt1_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_register_02_注册成功_无昵称</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt1_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_register_03_注册成功_有昵称</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt1_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_register_04_注册异常_密码为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt1_5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_register_05_注册异常_手机号为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt1_6' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_register_06_注册异常_手机号不足11位</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt1_7' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_register_07_注册异常_手机号超过11位</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt1_8' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_register_08_注册异常_密码少于6位</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt1_9' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_register_09_注册异常_密码多余11位</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt1_10' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_register_10_注册异常_手机号以注册</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='ft1_11' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_11_None</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_11' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_11'>错误</button>
+    <div id='div_ft1_11' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_11' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_11'>错误</button>
+    <div id='div_ft1_11' class="collapse in" align="left">
+    <pre>
+    
+ft1_11: Traceback (most recent call last):
+  File "/Users/allzhou/Desktop/lemon/libs/ddt.py", line 161, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/allzhou/Desktop/lemon/cases/test_01_register.py", line 31, in test_register
+    new_data = HandleContext.register_paramaterization_not_exist(data) #参数已经被正常实际好替换
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 90, in register_paramaterization_not_exist
+    data = cls.not_existed_tel_repalce(data)
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 25, in not_existed_tel_repalce
+    if re.search(cls.not_existed_tel_pattern,data):
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py", line 183, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_12' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_12_None</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_12' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_12'>错误</button>
+    <div id='div_ft1_12' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_12' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_12'>错误</button>
+    <div id='div_ft1_12' class="collapse in" align="left">
+    <pre>
+    
+ft1_12: Traceback (most recent call last):
+  File "/Users/allzhou/Desktop/lemon/libs/ddt.py", line 161, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/allzhou/Desktop/lemon/cases/test_01_register.py", line 31, in test_register
+    new_data = HandleContext.register_paramaterization_not_exist(data) #参数已经被正常实际好替换
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 90, in register_paramaterization_not_exist
+    data = cls.not_existed_tel_repalce(data)
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 25, in not_existed_tel_repalce
+    if re.search(cls.not_existed_tel_pattern,data):
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py", line 183, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_13' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_13_None</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_13' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_13'>错误</button>
+    <div id='div_ft1_13' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_13' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_13'>错误</button>
+    <div id='div_ft1_13' class="collapse in" align="left">
+    <pre>
+    
+ft1_13: Traceback (most recent call last):
+  File "/Users/allzhou/Desktop/lemon/libs/ddt.py", line 161, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/allzhou/Desktop/lemon/cases/test_01_register.py", line 31, in test_register
+    new_data = HandleContext.register_paramaterization_not_exist(data) #参数已经被正常实际好替换
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 90, in register_paramaterization_not_exist
+    data = cls.not_existed_tel_repalce(data)
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 25, in not_existed_tel_repalce
+    if re.search(cls.not_existed_tel_pattern,data):
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py", line 183, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_14' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_14_None</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_14' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_14'>错误</button>
+    <div id='div_ft1_14' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_14' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_14'>错误</button>
+    <div id='div_ft1_14' class="collapse in" align="left">
+    <pre>
+    
+ft1_14: Traceback (most recent call last):
+  File "/Users/allzhou/Desktop/lemon/libs/ddt.py", line 161, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/allzhou/Desktop/lemon/cases/test_01_register.py", line 31, in test_register
+    new_data = HandleContext.register_paramaterization_not_exist(data) #参数已经被正常实际好替换
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 90, in register_paramaterization_not_exist
+    data = cls.not_existed_tel_repalce(data)
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 25, in not_existed_tel_repalce
+    if re.search(cls.not_existed_tel_pattern,data):
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py", line 183, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_15' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_15_None</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_15' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_15'>错误</button>
+    <div id='div_ft1_15' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_15' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_15'>错误</button>
+    <div id='div_ft1_15' class="collapse in" align="left">
+    <pre>
+    
+ft1_15: Traceback (most recent call last):
+  File "/Users/allzhou/Desktop/lemon/libs/ddt.py", line 161, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/allzhou/Desktop/lemon/cases/test_01_register.py", line 31, in test_register
+    new_data = HandleContext.register_paramaterization_not_exist(data) #参数已经被正常实际好替换
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 90, in register_paramaterization_not_exist
+    data = cls.not_existed_tel_repalce(data)
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 25, in not_existed_tel_repalce
+    if re.search(cls.not_existed_tel_pattern,data):
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py", line 183, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_16' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_16_None</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_16' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_16'>错误</button>
+    <div id='div_ft1_16' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_16' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_16'>错误</button>
+    <div id='div_ft1_16' class="collapse in" align="left">
+    <pre>
+    
+ft1_16: Traceback (most recent call last):
+  File "/Users/allzhou/Desktop/lemon/libs/ddt.py", line 161, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/allzhou/Desktop/lemon/cases/test_01_register.py", line 31, in test_register
+    new_data = HandleContext.register_paramaterization_not_exist(data) #参数已经被正常实际好替换
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 90, in register_paramaterization_not_exist
+    data = cls.not_existed_tel_repalce(data)
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 25, in not_existed_tel_repalce
+    if re.search(cls.not_existed_tel_pattern,data):
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py", line 183, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_17' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_17_None</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_17' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_17'>错误</button>
+    <div id='div_ft1_17' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_17' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_17'>错误</button>
+    <div id='div_ft1_17' class="collapse in" align="left">
+    <pre>
+    
+ft1_17: Traceback (most recent call last):
+  File "/Users/allzhou/Desktop/lemon/libs/ddt.py", line 161, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/allzhou/Desktop/lemon/cases/test_01_register.py", line 31, in test_register
+    new_data = HandleContext.register_paramaterization_not_exist(data) #参数已经被正常实际好替换
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 90, in register_paramaterization_not_exist
+    data = cls.not_existed_tel_repalce(data)
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 25, in not_existed_tel_repalce
+    if re.search(cls.not_existed_tel_pattern,data):
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py", line 183, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_18' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_18_None</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_18' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_18'>错误</button>
+    <div id='div_ft1_18' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_18' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_18'>错误</button>
+    <div id='div_ft1_18' class="collapse in" align="left">
+    <pre>
+    
+ft1_18: Traceback (most recent call last):
+  File "/Users/allzhou/Desktop/lemon/libs/ddt.py", line 161, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/allzhou/Desktop/lemon/cases/test_01_register.py", line 31, in test_register
+    new_data = HandleContext.register_paramaterization_not_exist(data) #参数已经被正常实际好替换
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 90, in register_paramaterization_not_exist
+    data = cls.not_existed_tel_repalce(data)
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 25, in not_existed_tel_repalce
+    if re.search(cls.not_existed_tel_pattern,data):
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py", line 183, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_19' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_19_None</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_19' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_19'>错误</button>
+    <div id='div_ft1_19' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_19' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_19'>错误</button>
+    <div id='div_ft1_19' class="collapse in" align="left">
+    <pre>
+    
+ft1_19: Traceback (most recent call last):
+  File "/Users/allzhou/Desktop/lemon/libs/ddt.py", line 161, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/allzhou/Desktop/lemon/cases/test_01_register.py", line 31, in test_register
+    new_data = HandleContext.register_paramaterization_not_exist(data) #参数已经被正常实际好替换
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 90, in register_paramaterization_not_exist
+    data = cls.not_existed_tel_repalce(data)
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 25, in not_existed_tel_repalce
+    if re.search(cls.not_existed_tel_pattern,data):
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py", line 183, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_20' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_20_None</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_20' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_20'>错误</button>
+    <div id='div_ft1_20' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_20' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_20'>错误</button>
+    <div id='div_ft1_20' class="collapse in" align="left">
+    <pre>
+    
+ft1_20: Traceback (most recent call last):
+  File "/Users/allzhou/Desktop/lemon/libs/ddt.py", line 161, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/allzhou/Desktop/lemon/cases/test_01_register.py", line 31, in test_register
+    new_data = HandleContext.register_paramaterization_not_exist(data) #参数已经被正常实际好替换
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 90, in register_paramaterization_not_exist
+    data = cls.not_existed_tel_repalce(data)
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 25, in not_existed_tel_repalce
+    if re.search(cls.not_existed_tel_pattern,data):
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py", line 183, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_21' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_21_None</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_21' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_21'>错误</button>
+    <div id='div_ft1_21' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_21' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_21'>错误</button>
+    <div id='div_ft1_21' class="collapse in" align="left">
+    <pre>
+    
+ft1_21: Traceback (most recent call last):
+  File "/Users/allzhou/Desktop/lemon/libs/ddt.py", line 161, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/allzhou/Desktop/lemon/cases/test_01_register.py", line 31, in test_register
+    new_data = HandleContext.register_paramaterization_not_exist(data) #参数已经被正常实际好替换
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 90, in register_paramaterization_not_exist
+    data = cls.not_existed_tel_repalce(data)
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 25, in not_existed_tel_repalce
+    if re.search(cls.not_existed_tel_pattern,data):
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py", line 183, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_22' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_22_None</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_22' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_22'>错误</button>
+    <div id='div_ft1_22' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_22' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_22'>错误</button>
+    <div id='div_ft1_22' class="collapse in" align="left">
+    <pre>
+    
+ft1_22: Traceback (most recent call last):
+  File "/Users/allzhou/Desktop/lemon/libs/ddt.py", line 161, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/allzhou/Desktop/lemon/cases/test_01_register.py", line 31, in test_register
+    new_data = HandleContext.register_paramaterization_not_exist(data) #参数已经被正常实际好替换
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 90, in register_paramaterization_not_exist
+    data = cls.not_existed_tel_repalce(data)
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 25, in not_existed_tel_repalce
+    if re.search(cls.not_existed_tel_pattern,data):
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py", line 183, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_23' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_23_None</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_23' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_23'>错误</button>
+    <div id='div_ft1_23' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_23' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_23'>错误</button>
+    <div id='div_ft1_23' class="collapse in" align="left">
+    <pre>
+    
+ft1_23: Traceback (most recent call last):
+  File "/Users/allzhou/Desktop/lemon/libs/ddt.py", line 161, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/allzhou/Desktop/lemon/cases/test_01_register.py", line 31, in test_register
+    new_data = HandleContext.register_paramaterization_not_exist(data) #参数已经被正常实际好替换
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 90, in register_paramaterization_not_exist
+    data = cls.not_existed_tel_repalce(data)
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 25, in not_existed_tel_repalce
+    if re.search(cls.not_existed_tel_pattern,data):
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py", line 183, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_24' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_24_None</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_24' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_24'>错误</button>
+    <div id='div_ft1_24' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_24' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_24'>错误</button>
+    <div id='div_ft1_24' class="collapse in" align="left">
+    <pre>
+    
+ft1_24: Traceback (most recent call last):
+  File "/Users/allzhou/Desktop/lemon/libs/ddt.py", line 161, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/allzhou/Desktop/lemon/cases/test_01_register.py", line 31, in test_register
+    new_data = HandleContext.register_paramaterization_not_exist(data) #参数已经被正常实际好替换
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 90, in register_paramaterization_not_exist
+    data = cls.not_existed_tel_repalce(data)
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 25, in not_existed_tel_repalce
+    if re.search(cls.not_existed_tel_pattern,data):
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py", line 183, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_25' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_25_None</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_25' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_25'>错误</button>
+    <div id='div_ft1_25' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_25' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_25'>错误</button>
+    <div id='div_ft1_25' class="collapse in" align="left">
+    <pre>
+    
+ft1_25: Traceback (most recent call last):
+  File "/Users/allzhou/Desktop/lemon/libs/ddt.py", line 161, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/allzhou/Desktop/lemon/cases/test_01_register.py", line 31, in test_register
+    new_data = HandleContext.register_paramaterization_not_exist(data) #参数已经被正常实际好替换
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 90, in register_paramaterization_not_exist
+    data = cls.not_existed_tel_repalce(data)
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 25, in not_existed_tel_repalce
+    if re.search(cls.not_existed_tel_pattern,data):
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py", line 183, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_26' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_26_None</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_26' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_26'>错误</button>
+    <div id='div_ft1_26' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_26' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_26'>错误</button>
+    <div id='div_ft1_26' class="collapse in" align="left">
+    <pre>
+    
+ft1_26: Traceback (most recent call last):
+  File "/Users/allzhou/Desktop/lemon/libs/ddt.py", line 161, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/allzhou/Desktop/lemon/cases/test_01_register.py", line 31, in test_register
+    new_data = HandleContext.register_paramaterization_not_exist(data) #参数已经被正常实际好替换
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 90, in register_paramaterization_not_exist
+    data = cls.not_existed_tel_repalce(data)
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 25, in not_existed_tel_repalce
+    if re.search(cls.not_existed_tel_pattern,data):
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py", line 183, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_27' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_27_None</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_27' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_27'>错误</button>
+    <div id='div_ft1_27' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_27' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_27'>错误</button>
+    <div id='div_ft1_27' class="collapse in" align="left">
+    <pre>
+    
+ft1_27: Traceback (most recent call last):
+  File "/Users/allzhou/Desktop/lemon/libs/ddt.py", line 161, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/allzhou/Desktop/lemon/cases/test_01_register.py", line 31, in test_register
+    new_data = HandleContext.register_paramaterization_not_exist(data) #参数已经被正常实际好替换
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 90, in register_paramaterization_not_exist
+    data = cls.not_existed_tel_repalce(data)
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 25, in not_existed_tel_repalce
+    if re.search(cls.not_existed_tel_pattern,data):
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py", line 183, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_28' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_28_None</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_28' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_28'>错误</button>
+    <div id='div_ft1_28' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_28' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_28'>错误</button>
+    <div id='div_ft1_28' class="collapse in" align="left">
+    <pre>
+    
+ft1_28: Traceback (most recent call last):
+  File "/Users/allzhou/Desktop/lemon/libs/ddt.py", line 161, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/allzhou/Desktop/lemon/cases/test_01_register.py", line 31, in test_register
+    new_data = HandleContext.register_paramaterization_not_exist(data) #参数已经被正常实际好替换
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 90, in register_paramaterization_not_exist
+    data = cls.not_existed_tel_repalce(data)
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 25, in not_existed_tel_repalce
+    if re.search(cls.not_existed_tel_pattern,data):
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py", line 183, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_29' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_29_None</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_29' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_29'>错误</button>
+    <div id='div_ft1_29' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_29' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_29'>错误</button>
+    <div id='div_ft1_29' class="collapse in" align="left">
+    <pre>
+    
+ft1_29: Traceback (most recent call last):
+  File "/Users/allzhou/Desktop/lemon/libs/ddt.py", line 161, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/allzhou/Desktop/lemon/cases/test_01_register.py", line 31, in test_register
+    new_data = HandleContext.register_paramaterization_not_exist(data) #参数已经被正常实际好替换
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 90, in register_paramaterization_not_exist
+    data = cls.not_existed_tel_repalce(data)
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 25, in not_existed_tel_repalce
+    if re.search(cls.not_existed_tel_pattern,data):
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py", line 183, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_30' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_30_None</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_30' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_30'>错误</button>
+    <div id='div_ft1_30' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_30' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_30'>错误</button>
+    <div id='div_ft1_30' class="collapse in" align="left">
+    <pre>
+    
+ft1_30: Traceback (most recent call last):
+  File "/Users/allzhou/Desktop/lemon/libs/ddt.py", line 161, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/allzhou/Desktop/lemon/cases/test_01_register.py", line 31, in test_register
+    new_data = HandleContext.register_paramaterization_not_exist(data) #参数已经被正常实际好替换
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 90, in register_paramaterization_not_exist
+    data = cls.not_existed_tel_repalce(data)
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 25, in not_existed_tel_repalce
+    if re.search(cls.not_existed_tel_pattern,data):
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py", line 183, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_31' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_31_None</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_31' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_31'>错误</button>
+    <div id='div_ft1_31' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_31' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_31'>错误</button>
+    <div id='div_ft1_31' class="collapse in" align="left">
+    <pre>
+    
+ft1_31: Traceback (most recent call last):
+  File "/Users/allzhou/Desktop/lemon/libs/ddt.py", line 161, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/allzhou/Desktop/lemon/cases/test_01_register.py", line 31, in test_register
+    new_data = HandleContext.register_paramaterization_not_exist(data) #参数已经被正常实际好替换
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 90, in register_paramaterization_not_exist
+    data = cls.not_existed_tel_repalce(data)
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 25, in not_existed_tel_repalce
+    if re.search(cls.not_existed_tel_pattern,data):
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py", line 183, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_32' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_32_None</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_32' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_32'>错误</button>
+    <div id='div_ft1_32' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_32' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_32'>错误</button>
+    <div id='div_ft1_32' class="collapse in" align="left">
+    <pre>
+    
+ft1_32: Traceback (most recent call last):
+  File "/Users/allzhou/Desktop/lemon/libs/ddt.py", line 161, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/allzhou/Desktop/lemon/cases/test_01_register.py", line 31, in test_register
+    new_data = HandleContext.register_paramaterization_not_exist(data) #参数已经被正常实际好替换
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 90, in register_paramaterization_not_exist
+    data = cls.not_existed_tel_repalce(data)
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 25, in not_existed_tel_repalce
+    if re.search(cls.not_existed_tel_pattern,data):
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py", line 183, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_33' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_33_None</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_33' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_33'>错误</button>
+    <div id='div_ft1_33' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_33' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_33'>错误</button>
+    <div id='div_ft1_33' class="collapse in" align="left">
+    <pre>
+    
+ft1_33: Traceback (most recent call last):
+  File "/Users/allzhou/Desktop/lemon/libs/ddt.py", line 161, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/allzhou/Desktop/lemon/cases/test_01_register.py", line 31, in test_register
+    new_data = HandleContext.register_paramaterization_not_exist(data) #参数已经被正常实际好替换
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 90, in register_paramaterization_not_exist
+    data = cls.not_existed_tel_repalce(data)
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 25, in not_existed_tel_repalce
+    if re.search(cls.not_existed_tel_pattern,data):
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py", line 183, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_34' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_34_None</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_34' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_34'>错误</button>
+    <div id='div_ft1_34' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_34' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_34'>错误</button>
+    <div id='div_ft1_34' class="collapse in" align="left">
+    <pre>
+    
+ft1_34: Traceback (most recent call last):
+  File "/Users/allzhou/Desktop/lemon/libs/ddt.py", line 161, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/allzhou/Desktop/lemon/cases/test_01_register.py", line 31, in test_register
+    new_data = HandleContext.register_paramaterization_not_exist(data) #参数已经被正常实际好替换
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 90, in register_paramaterization_not_exist
+    data = cls.not_existed_tel_repalce(data)
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 25, in not_existed_tel_repalce
+    if re.search(cls.not_existed_tel_pattern,data):
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py", line 183, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_35' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_35_None</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_35' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_35'>错误</button>
+    <div id='div_ft1_35' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_35' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_35'>错误</button>
+    <div id='div_ft1_35' class="collapse in" align="left">
+    <pre>
+    
+ft1_35: Traceback (most recent call last):
+  File "/Users/allzhou/Desktop/lemon/libs/ddt.py", line 161, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/allzhou/Desktop/lemon/cases/test_01_register.py", line 31, in test_register
+    new_data = HandleContext.register_paramaterization_not_exist(data) #参数已经被正常实际好替换
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 90, in register_paramaterization_not_exist
+    data = cls.not_existed_tel_repalce(data)
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 25, in not_existed_tel_repalce
+    if re.search(cls.not_existed_tel_pattern,data):
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py", line 183, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_36' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_36_None</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_36' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_36'>错误</button>
+    <div id='div_ft1_36' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_36' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_36'>错误</button>
+    <div id='div_ft1_36' class="collapse in" align="left">
+    <pre>
+    
+ft1_36: Traceback (most recent call last):
+  File "/Users/allzhou/Desktop/lemon/libs/ddt.py", line 161, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/allzhou/Desktop/lemon/cases/test_01_register.py", line 31, in test_register
+    new_data = HandleContext.register_paramaterization_not_exist(data) #参数已经被正常实际好替换
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 90, in register_paramaterization_not_exist
+    data = cls.not_existed_tel_repalce(data)
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 25, in not_existed_tel_repalce
+    if re.search(cls.not_existed_tel_pattern,data):
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py", line 183, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='ft1_37' class='none'>
+    <td class='errorCase'><div class='testcase'>test_register_37_None</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_ft1_37' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_37'>错误</button>
+    <div id='div_ft1_37' class="collapse">  -->
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_ft1_37' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_37'>错误</button>
+    <div id='div_ft1_37' class="collapse in" align="left">
+    <pre>
+    
+ft1_37: Traceback (most recent call last):
+  File "/Users/allzhou/Desktop/lemon/libs/ddt.py", line 161, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/allzhou/Desktop/lemon/cases/test_01_register.py", line 31, in test_register
+    new_data = HandleContext.register_paramaterization_not_exist(data) #参数已经被正常实际好替换
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 90, in register_paramaterization_not_exist
+    data = cls.not_existed_tel_repalce(data)
+  File "/Users/allzhou/Desktop/lemon/scripts/handle_context.py", line 25, in not_existed_tel_repalce
+    if re.search(cls.not_existed_tel_pattern,data):
+  File "/usr/local/Cellar/python/3.7.3/Frameworks/Python.framework/Versions/3.7/lib/python3.7/re.py", line 183, in search
+    return _compile(pattern, flags).search(string)
+TypeError: expected string or bytes-like object
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>test_02_login.TestLogin</td>
+    <td class="text-center">5</td>
+    <td class="text-center">5</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c2',5)" class="detail" id='c2'>详细</a></td>
+</tr>
+
+<tr id='pt2_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_1_正常登陆</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt2_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_2_手机号为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt2_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_3_密码为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt2_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_4_密码错误</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt2_5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_login_5_手机号错误</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>test_03_recharge.TestRecharge</td>
+    <td class="text-center">15</td>
+    <td class="text-center">15</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c3',15)" class="detail" id='c3'>详细</a></td>
+</tr>
+
+<tr id='pt3_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_recharge_01_正常登陆</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt3_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_recharge_02_充值成功_整数</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt3_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_recharge_03_充值成功_1位小数</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt3_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_recharge_04_充值成功_2位小数</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt3_5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_recharge_05_充值成功_50万</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt3_6' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_recharge_06_手机号为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt3_7' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_recharge_07_手机号不足11位</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt3_8' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_recharge_08_手机号超过11位</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt3_9' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_recharge_09_手机号不存在</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt3_10' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_recharge_10_充值金额为0</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt3_11' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_recharge_11_充值金额为负数</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt3_12' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_recharge_12_充值金额为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt3_13' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_recharge_13_充值金额_3位小数</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt3_14' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_recharge_14_充值金额_大于50万</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt3_15' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_recharge_15_充值金额_非数字</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>test_04_add.TestRegister</td>
+    <td class="text-center">20</td>
+    <td class="text-center">20</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c4',20)" class="detail" id='c4'>详细</a></td>
+</tr>
+
+<tr id='pt4_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_register_01_正常登录</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_register_02_加标</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_register_03_借款人id为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_register_04_标题为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_register_05_借款金额为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_6' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_register_06_年利率为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_7' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_register_07_借款期限为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_8' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_register_08_借款期限类型为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_9' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_register_09_还款方式为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_10' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_register_10_竞标天数为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_11' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_register_11_借款人id为负数</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_12' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_register_12_借款人id为小数</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_13' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_register_13_借款金额为负数</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_14' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_register_14_借款金额为小数</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_15' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_register_15_借款金额小于1000</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_16' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_register_16_借款金额等于1000</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_17' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_register_17_借款日期类型为3</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_18' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_register_18_借款金额为非数字</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_19' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_register_19_贷款利率非数字</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt4_20' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_register_20_付款方式非数字</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>test_05_invest.TestRecharge</td>
+    <td class="text-center">18</td>
+    <td class="text-center">18</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c5',18)" class="detail" id='c5'>详细</a></td>
+</tr>
+
+<tr id='pt5_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_01_管理员正常登陆</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_02_管理员加标</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_03_管理员审核</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_04_投资人正常登陆</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_05_投资人正常投资</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_6' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_06_投资人id为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_7' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_07_投资人密码为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_8' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_08_标id为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_9' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_09_投资金额为空</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_10' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_10_投资人id为负数</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_11' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_11_投资人id为0</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_12' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_12_标id为负数</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_13' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_13_标id为0</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_14' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_14_投资人密码长度小于6</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_15' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_15_投资人密码长度大于18</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_16' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_16_投资金额为负数</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_17' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_17_投资金额为不能被100整除的数</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='pt5_18' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_invest_18_投资人id不存在</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+</tr>
+
+<tr id='total_row' class="text-center active">
+    <td>总计</td>
+    <td>95</td>
+    <td>68</td>
+    <td>0</td>
+    <td>27</td>
+    <td>通过率：71.58%</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+    <div style=" position:fixed;right:50px; bottom:30px; width:20px; height:20px;cursor:pointer">
+    <a href="#"><span class="glyphicon glyphicon-eject" style = "font-size:30px;" aria-hidden="true">
+    </span></a></div>
+    
+</body>
+</html>
